@@ -16,7 +16,7 @@
 
 body {
   font-family: var(--main-font);
-  color: #212121;
+  color: var(--main-txt-cl);
 }
 
 /*resert styles */
@@ -60,6 +60,7 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 .logo {
   margin-right: 93px;
@@ -90,6 +91,8 @@ img {
 }
 .header-list {
   display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .header-item {
@@ -109,7 +112,7 @@ img {
   line-height: 1.1;
   letter-spacing: 0.02em;
 
-  color: #212121;
+  color: var(--main-txt-cl);
 }
 
 .header-link:hover,
@@ -141,19 +144,19 @@ img {
 */
 .hero {
   background-color: var(--dark-bg-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-container {
-  padding-top: 200px;
-  padding-bottom: 200px;
   align-items: center;
 }
 
 .main-title {
-  width: 696px;
+  max-width: 696px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
@@ -178,7 +181,7 @@ img {
   letter-spacing: 0.06em;
   color: #ffffff;
 
-  background-color: #2196f3;
+  background-color: var(--link-txt-cl);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
@@ -198,7 +201,7 @@ img {
 |Features section
 |===============================
 */
-.features-container {
+.features {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -206,6 +209,16 @@ img {
 .features-list {
   display: flex;
   gap: 30px;
+
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+.features-item {
+  width: 270px;
 }
 
 .second-title {
@@ -238,13 +251,18 @@ img {
 |Services section
 |===============================
 */
+.services {
+  padding-bottom: 94px;
+}
 .second-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .service-list {
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
+  margin-block: 0;
+  margin-inline: 0;
+  padding-inline: 0;
 }
 
 /**
@@ -254,15 +272,23 @@ img {
 */
 .team {
   background: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.second-title {
+  margin-bottom: 50px;
 }
 .team-list {
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
+  margin-block: 0;
+  margin-inline: 0;
+  padding-inline: 0;
 }
 .team-wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
+
   padding-left: 5px;
   padding-right: 5px;
 
@@ -301,13 +327,18 @@ img {
 .contacts-adress {
   font-style: normal;
 }
+.footer-item {
+  margin-block: 0;
+  margin-inline: 0;
+  padding-inline: 0;
+  margin-top: 9px;
+}
 
 .footer-adress {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #ffffff;
   margin-top: 20px;
-  margin-bottom: 9px;
 }
 .footer-email,
 .footer-phone {
@@ -325,26 +356,31 @@ img {
 */
 
 /* Project Section*/
-.function-container {
+.functional {
   padding-top: 94px;
-  padding-bottom: 56px;
+  padding-bottom: 94px;
 }
+
 .project-container {
   display: flex;
   gap: 5px;
   justify-content: center;
+  margin-block: 0;
+  margin-inline: 0;
+  padding-inline: 0;
+  margin-bottom: 50px;
 }
 
 .project-link:hover,
 .project-link:focus {
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--link-txt-cl);
 }
 
 .btn-project:hover,
 .btn-project:focus {
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--link-txt-cl);
 }
 .btn-project {
   font-family: inherit;
@@ -360,7 +396,7 @@ img {
 }
 .btn-project-current {
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--link-txt-cl);
 }
 
 .visually-hidden {
@@ -383,13 +419,31 @@ img {
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-txt-cl);
   cursor: pointer;
 }
 
 .item-all {
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--link-txt-cl);
+}
+.about-project {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-block: 0;
+  margin-inline: 0;
+  padding-inline: 0;
+}
+.project-wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  border-top: none;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
 }
 
 .projects-item {
@@ -406,21 +460,4 @@ img {
   font-size: 16px;
   line-height: 1.9;
   color: var(--accent-txt-cl);
-}
-
-.about-project {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding-bottom: 94px;
-}
-.project-wrapper {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
-
-  border-top: none;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
 }
