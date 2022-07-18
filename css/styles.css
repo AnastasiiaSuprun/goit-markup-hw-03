@@ -95,11 +95,12 @@ img {
 }
 .header-list {
   display: flex;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 0px;
-  margin-block-start: 0;
-  margin-block-end: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header-list-nav {
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -217,11 +218,8 @@ img {
   display: flex;
   gap: 30px;
 
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .features-item {
@@ -267,9 +265,8 @@ img {
 .service-list {
   display: flex;
   gap: 30px;
-  margin-block: 0;
-  margin-inline: 0;
-  padding-inline: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /**
@@ -288,9 +285,8 @@ img {
 .team-list {
   display: flex;
   gap: 30px;
-  margin-block: 0;
-  margin-inline: 0;
-  padding-inline: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .team-wrapper {
   padding-top: 30px;
@@ -340,9 +336,8 @@ img {
   margin-top: 20px;
 }
 .footer-item {
-  margin-block: 0;
-  margin-inline: 0;
-  padding-inline: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .footer-list {
   margin-bottom: 9px;
@@ -383,9 +378,8 @@ img {
   display: flex;
   gap: 8px;
   justify-content: center;
-  margin-block: 0;
-  margin-inline: 0;
-  padding-inline: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-bottom: 50px;
   padding-top: 6px;
   padding-bottom: 6px;
